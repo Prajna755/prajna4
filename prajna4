@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main(){
+    
+    float real1, imag1, real2, imag2;
+    float realSum, imagSum;
+
+    // Read first complex number
+    printf("Enter real and imaginary parts of first number: ");
+    scanf("%f %f", &real1, &imag1);
+
+    // Read second complex number
+    printf("Enter real and imaginary parts of second number: ");
+    scanf("%f %f", &real2, &imag2);
+
+    // Add real and imaginary parts
+    realSum = real1 + real2;
+    imagSum = imag1 + imag2;
+
+    // Display the result
+    printf("Sum = %.2f %+.2fi\n", realSum, imagSum);
+
+    return 0;
+}
